@@ -12,6 +12,10 @@ If the given PR is not merged and passes all conditions, merge the PR and procee
 
 Also, it adds the PR number to the deployment package name. Format: ${PACKAGE_NAME}_pr_${PR_NUMBER}
 
+## Required Jenkins Plugins
+1. [Pipeline Utility Steps](https://plugins.jenkins.io/pipeline-utility-steps/)
+2. [HTTP Request](https://plugins.jenkins.io/http_request/)
+
 ## Environment Variables
 Below environment variables below can be provided for the job run.
 - *PR_MERGE_SLAVE_AGENT_LABEL*: The slave agent label to use (Ex: MacSTANDALONE). Default none.
